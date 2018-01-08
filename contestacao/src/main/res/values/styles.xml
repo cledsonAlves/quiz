@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme.ButtonBlueStroke" parent="DefaultButton">
+        <item name="android:background">@drawable/bg_button_blue_stroke</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="DefaultButton" parent="android:Widget.DeviceDefault.Button">
+        <item name="android:borderlessButtonStyle">@null</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+</resources>

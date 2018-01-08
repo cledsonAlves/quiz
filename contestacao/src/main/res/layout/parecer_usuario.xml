@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three">
+
+
+    <!--  Cabeçalho -->
+    <RelativeLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#f3f5f6"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/valor_transacao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="R$ 120,00 em 2x"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/data_transacaoo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="28 Fev 18:32"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nome_estabelecimento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valor_transacao"
+            android:gravity="start"
+            android:text="Pao de Açúcar"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <!--  Cabeçalho -->
+
+
+    <!-- laoding -->
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <include
+            layout="@layout/layout_loading_state"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--  corpo -->
+
+
+    <!--  Cabeçalho -->
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cabecalho"
+        android:layout_marginBottom="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descreva"
+                    android:textColor="@color/colorBlueLight" />
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/AppTheme.ButtonBlueStroke"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valor_transacao"
+                android:layout_marginEnd="16dp"
+                android:gravity="end"
+                android:text="@string/total_caracteres"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <!--  corpo -->
+
+
+    <!--  rodape -->
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1BB3BC"
+        android:gravity="center"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prosseguir"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--  rodape -->
+
+
+</RelativeLayout>

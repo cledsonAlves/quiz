@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">contestar  compra</string>
+
+    <!-- contestar -->
+    <string name="contestar_compra">Contestar</string>
+    <string name="resumo_contestacao">Resumo da Contestação</string>
+    <string name="resumo_erro_contestacao">Erro inesperado no registro da contenstação. Tente novamente ou entre em contato com a central</string>
+    <string name="motivo_contestacao">Escolha o motivo</string>
+    <string name="registro_contestacao">Registrar contestação</string>
+    <string name="titulo_registro">Confira as informações abaixo e prossiga se estiver tudo correto.</string>
+    <string name="texto_reemissao">Por questões de segurança, seu cartão foi bloqueado e será enviado um novo no prazo de xx dias.</string>
+
+
+    <string name="tel_one">4004-3535</string>
+    <string name="tel_two">0800 702 3535</string>
+    <string name="capitais"> Capitais e regiões Metropolitanas</string>
+    <string name="localidades"> Outras \n localidades </string>
+    <string name="responsabilidade">O cliente é o responsável pela \n guarda do cartão. Não é possível realizar a contestação.</string>
+    <string name="nao_reconhece">Não reconheço a compra</string>
+    <string name="texto_central">Para dúvidas, favor <b> entrar em contato com a central de atendimento </b>ou <b>dirija-se para a agência</b> mais próxima.</string>
+
+    <!-- bloqueio temporario -->
+    <string name="bloquear">Bloquear</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar_bloqueio">Confirma o bloqueio do cartão?</string>
+    <string name="transacoes_indevidas">Para evitar novas transações indevidas, o seu cartão será <b>bloqueado temporariamente.</b></string>
+    <string name="transacoes_indevidas_resumo">Para contestações é fortemente recomendado o bloqueio e reemissão de outro cartão.</string>
+<string name="tran_inde_resumido">Neste caso é responsabilidade do cliente eventuais transações não realizadas pelo possuidor do cartão.</string>
+
+    <!-- resumo contestação -->
+    <string name="cartao_bloqueio">O cartão será bloqueado.</string>
+    <string name="cartao_bloqueio_true">O cartão está bloqueado.</string>
+    <string name="msg_cartao_bloqueio">Um novo cartão será enviado para você no endereço cadastrado.</string>
+    <string name="msg_cartao_endereco">Caso endereço esteja desatualizado, finalize o processo e entre em contato com a central de atendimento.</string>
+    <string name="tentar">Tentar novamente</string>
+
+    <!-- parecer do usuario -->
+    <string name="prosseguir">PROSSEGUIR</string>
+    <string name="descreva">Descreva o que aconteceu:</string>
+    <string name="total_caracteres">500 caracteres restantes</string>
+
+</resources>

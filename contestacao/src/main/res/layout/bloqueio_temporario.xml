@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/load"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/loading_layout_home">
+
+        </include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--  Cabeçalho -->
+    <RelativeLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#f3f5f6"
+        android:padding="10dip">
+
+        <TextView
+        android:id="@+id/valor_transacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/colorBlack"
+        android:text="R$ 120,00 em 2x"
+            android:textAppearance="@style/TextAppearance.FontPath"
+        android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/data_transacaoo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="28 Fev 18:32"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nome_estabelecimento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_below="@+id/valor_transacao"
+            android:text="Pao de Açúcar"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <!--  Cabeçalho -->
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_virtual_card_small"
+        android:layout_below="@+id/cabecalho"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent">
+    </include>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cabecalho">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:gravity="center_horizontal"
+                android:text="@string/transacoes_indevidas" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlackLight"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:text="@string/confirmar_bloqueio" />
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/change_pin_footer"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginRight="@dimen/default_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/metropolitansPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelar"
+                    style="@style/AppTheme.ButtonBlueStroke"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/bloquear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bloquear"
+                    style="@style/AppTheme.ButtonBlueStroke"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

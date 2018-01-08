@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inv_white_three">
+
+    <LinearLayout
+        android:id="@+id/inv2_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+        <include
+            android:id="@+id/layout_resumo"
+            layout="@layout/resumo_activity">
+
+        </include>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inv2_home_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+
+        <include
+            android:id="@+id/layout_erro"
+            layout="@layout/resumo_erro_activity">
+
+        </include>
+    </LinearLayout>
+
+</RelativeLayout>

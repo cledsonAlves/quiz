@@ -1,0 +1,427 @@
+---------- JSON de perguntas ----------
+{
+	"id": 2,
+	"description": "Fraude - Inicial",
+	"questions": [
+		{
+			"id": 2,
+			"description": "Está de posse do cartão?",
+			"hint": null,
+			"answers": [
+				{
+					"id": 3,
+					"description": "Sim",
+					"hint": null,
+					"nextQuestion": {
+						"id": 3,
+						"description": "Foi roubado ou coagido?",
+						"hint": null,
+						"answers": [
+							{
+								"id": 5,
+								"description": "Fui roubado.",
+								"hint": null,
+								"nextQuestion": null
+							},
+							{
+								"id": 6,
+								"description": "Sofri coação.",
+								"hint": null,
+								"nextQuestion": null
+							},
+							{
+								"id": 7,
+								"description": "Não fui roubado ou coagido",
+								"hint": null,
+								"nextQuestion": null
+							}
+						]
+					}
+				},
+				{
+					"id": 4,
+					"description": "Não",
+					"hint": null,
+					"nextQuestion": {
+						"id": 4,
+						"description": "Por qual motivo você não está de posse do cartão?",
+						"hint": null,
+						"answers": [
+							{
+								"id": 8,
+								"description": "Perdi o cartão",
+								"hint": null,
+								"nextQuestion": null
+							},
+							{
+								"id": 9,
+								"description": "Fui roubado",
+								"hint": null,
+								"nextQuestion": null
+							},
+							{
+								"id": 10,
+								"description": "Nunca recebi o cartão",
+								"hint": null,
+								"nextQuestion": null
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 3,
+			"description": "Foi roubado ou coagido?",
+			"hint": null,
+			"answers": [
+				{
+					"id": 5,
+					"description": "Fui roubado.",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 6,
+					"description": "Sofri coação.",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 7,
+					"description": "Não fui roubado ou coagido",
+					"hint": null,
+					"nextQuestion": null
+				}
+			]
+		},
+		{
+			"id": 4,
+			"description": "Por qual motivo você não está de posse do cartão?",
+			"hint": null,
+			"answers": [
+				{
+					"id": 8,
+					"description": "Perdi o cartão",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 9,
+					"description": "Fui roubado",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 10,
+					"description": "Nunca recebi o cartão",
+					"hint": null,
+					"nextQuestion": null
+				}
+			]
+		},
+		{
+			"id": 5,
+			"description": "Qual o tipo de transação?",
+			"hint": null,
+			"answers": [
+				{
+					"id": 11,
+					"description": "Transação com chip",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 12,
+					"description": "Transação internacional",
+					"hint": null,
+					"nextQuestion": null
+				},
+				{
+					"id": 13,
+					"description": "Transação com cartão presente",
+					"hint": null,
+					"nextQuestion": null
+				}
+			]
+		}
+	]
+}
+
+
+---------- JSON DIAGNOSTICO ----------
+{
+    "necessaryActions": [
+        {
+            "necessaryAction": "EXECUTAR_PROXIMO_QUIZ"
+        }
+    ],
+    "nextQuiz": {
+        "id": 2,
+        "description": "Fraude - Inicial",
+        "data": [
+            {
+                "id": 3,
+                "description": "Foi roubado ou coagido?",
+                "data": [
+                    {
+                        "id": 5,
+                        "description": "Fui roubado."
+                    },
+                    {
+                        "id": 6,
+                        "description": "Sofri coação."
+                    },
+                    {
+                        "id": 7,
+                        "description": "Não fui roubado ou coagido"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "description": "Foi roubado ou coagido?",
+                "data": [
+                    {
+                        "id": 5,
+                        "description": "Fui roubado."
+                    },
+                    {
+                        "id": 6,
+                        "description": "Sofri coação."
+                    },
+                    {
+                        "id": 7,
+                        "description": "Não fui roubado ou coagido"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "description": "Foi roubado ou coagido?",
+                "data": [
+                    {
+                        "id": 5,
+                        "description": "Fui roubado."
+                    },
+                    {
+                        "id": 6,
+                        "description": "Sofri coação."
+                    },
+                    {
+                        "id": 7,
+                        "description": "Não fui roubado ou coagido"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "description": "Por qual motivo você não está de posse do cartão?",
+                "data": [
+                    {
+                        "id": 8,
+                        "description": "Perdi o cartão"
+                    },
+                    {
+                        "id": 9,
+                        "description": "Fui roubado"
+                    },
+                    {
+                        "id": 10,
+                        "description": "Nunca recebi o cartão"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "description": "Por qual motivo você não está de posse do cartão?",
+                "data": [
+                    {
+                        "id": 8,
+                        "description": "Perdi o cartão"
+                    },
+                    {
+                        "id": 9,
+                        "description": "Fui roubado"
+                    },
+                    {
+                        "id": 10,
+                        "description": "Nunca recebi o cartão"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "description": "Por qual motivo você não está de posse do cartão?",
+                "data": [
+                    {
+                        "id": 8,
+                        "description": "Perdi o cartão"
+                    },
+                    {
+                        "id": 9,
+                        "description": "Fui roubado"
+                    },
+                    {
+                        "id": 10,
+                        "description": "Nunca recebi o cartão"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "description": "Está de posse do cartão?",
+                "data": [
+                    {
+                        "id": 3,
+                        "description": "Sim",
+                        "data": {
+                            "id": 3,
+                            "description": "Foi roubado ou coagido?",
+                            "data": [
+                                {
+                                    "id": 5,
+                                    "description": "Fui roubado."
+                                },
+                                {
+                                    "id": 6,
+                                    "description": "Sofri coação."
+                                },
+                                {
+                                    "id": 7,
+                                    "description": "Não fui roubado ou coagido"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "description": "Não",
+                        "data": {
+                            "id": 4,
+                            "description": "Por qual motivo você não está de posse do cartão?",
+                            "data": [
+                                {
+                                    "id": 8,
+                                    "description": "Perdi o cartão"
+                                },
+                                {
+                                    "id": 9,
+                                    "description": "Fui roubado"
+                                },
+                                {
+                                    "id": 10,
+                                    "description": "Nunca recebi o cartão"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "description": "Está de posse do cartão?",
+                "data": [
+                    {
+                        "id": 3,
+                        "description": "Sim",
+                        "data": {
+                            "id": 3,
+                            "description": "Foi roubado ou coagido?",
+                            "data": [
+                                {
+                                    "id": 5,
+                                    "description": "Fui roubado."
+                                },
+                                {
+                                    "id": 6,
+                                    "description": "Sofri coação."
+                                },
+                                {
+                                    "id": 7,
+                                    "description": "Não fui roubado ou coagido"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "description": "Não",
+                        "data": {
+                            "id": 4,
+                            "description": "Por qual motivo você não está de posse do cartão?",
+                            "data": [
+                                {
+                                    "id": 8,
+                                    "description": "Perdi o cartão"
+                                },
+                                {
+                                    "id": 9,
+                                    "description": "Fui roubado"
+                                },
+                                {
+                                    "id": 10,
+                                    "description": "Nunca recebi o cartão"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "description": "Qual o tipo de transação?",
+                "data": [
+                    {
+                        "id": 11,
+                        "description": "Transação com chip"
+                    },
+                    {
+                        "id": 12,
+                        "description": "Transação internacional"
+                    },
+                    {
+                        "id": 13,
+                        "description": "Transação com cartão presente"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "description": "Qual o tipo de transação?",
+                "data": [
+                    {
+                        "id": 11,
+                        "description": "Transação com chip"
+                    },
+                    {
+                        "id": 12,
+                        "description": "Transação internacional"
+                    },
+                    {
+                        "id": 13,
+                        "description": "Transação com cartão presente"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "description": "Qual o tipo de transação?",
+                "data": [
+                    {
+                        "id": 11,
+                        "description": "Transação com chip"
+                    },
+                    {
+                        "id": 12,
+                        "description": "Transação internacional"
+                    },
+                    {
+                        "id": 13,
+                        "description": "Transação com cartão presente"
+                    }
+                ]
+            }
+        ]
+    }
+}
