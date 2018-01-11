@@ -7,6 +7,7 @@
     android:background="@color/inv_white_three">
 
 
+
     <!--  Cabeçalho -->
     <RelativeLayout
         android:id="@+id/cabecalho"
@@ -73,12 +74,14 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/titulo_questao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:layout_marginStart="4dp"
             android:text="Qual motivo da contestação ?"
-            android:textColor="@color/colorBlueLight" />
+            android:textColor="@color/colorBlue" />
+
 
 
         <android.support.v4.widget.NestedScrollView
@@ -92,7 +95,7 @@
 
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/lista_motivos"
+                    android:id="@+id/respostas"
                     android:layout_width="match_parent"
                     android:layout_height="600dp">
 

@@ -1,0 +1,22 @@
+﻿
+	
+		{
+			"modoEntrada": "ONLINE",
+			"dataCompra":"2017-04-23T00:00:00.000Z",
+			"valorCompra":200.51,
+			"contestacaoAnterior":false,
+			"internacional":false,
+			"situacao":"AUTORIZADA",
+			"dadosCartao":{
+				"numero":"0000.0000.0000.0000.0000",
+				"validoAte": "2025-02",
+				"dadosSeguro": {
+					"initialInsuranceDate":"2016-01-01T00:00:00.000Z",
+					"finalInsuranceDate":"2018-04-23T23:59:59.999Z"
+				}	
+			}
+		}
+	
+
+
+

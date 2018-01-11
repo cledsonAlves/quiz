@@ -43,10 +43,11 @@ public class ConstentacaoRouter {
 
     }
 
-    public void goResumoContestacao(final Context context) {
-        final Intent i = getBundledIntent(context, ResumoActivity.class);
+    public void goResumoContestacao(final Context context, String params) {
+        final Intent i = getBundledIntent(context,ResumoActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.putExtra("params",params);
         context.startActivity(i);
 
     }
@@ -55,7 +56,5 @@ public class ConstentacaoRouter {
         final Intent i = new Intent(context, clazz);
         return i;
     }
-
-
 
 }

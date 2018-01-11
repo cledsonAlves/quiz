@@ -26,11 +26,11 @@ public class MotivoFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.motivo_activity, container, false);
 
-        listaMotivos = view.findViewById(santander.com.br.constentacao.R.id.lista_motivos);
-        listaMotivos.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        listaMotivos.setItemAnimator(new DefaultItemAnimator());
-        listaMotivos.setNestedScrollingEnabled(false);
-        listaMotivos.setAdapter(new QuizMotivoAdapter(view.getContext(), Utils.mockMotivos()));
+       // listaMotivos = view.findViewById(santander.com.br.constentacao.R.id.lista_motivos);
+        //listaMotivos.setLayoutManager(new LinearLayoutManager(view.getContext()));
+       // listaMotivos.setItemAnimator(new DefaultItemAnimator());
+       // listaMotivos.setNestedScrollingEnabled(false);
+       // listaMotivos.setAdapter(new QuizMotivoAdapter(view.getContext(), Utils.mockMotivos()));
 
 
         return view;

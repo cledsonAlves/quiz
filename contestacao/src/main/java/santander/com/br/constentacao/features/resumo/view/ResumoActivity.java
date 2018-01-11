@@ -9,6 +9,7 @@ import android.text.Layout;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import santander.com.br.constentacao.R;
 import santander.com.br.constentacao.shared.utils.Utils;
@@ -23,7 +24,13 @@ public class ResumoActivity extends CoreActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contesta_falha);
+        setContentView(R.layout.parecer_usuario);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null && extras.containsKey("params")) {
+
+        }
+
 
     }
 

@@ -18,6 +18,7 @@ import santander.com.br.archreferencia.features.quiz.home.fragments.ParecerUsuar
 import santander.com.br.archreferencia.features.quiz.home.fragments.RemissaoFragment;
 import santander.com.br.archreferencia.features.quiz.home.fragments.ResumoErroFragment;
 import santander.com.br.archreferencia.features.quiz.home.fragments.ResumoFragment;
+import santander.com.br.constentacao.shared.ConstentacaoRouter;
 import santander.com.br.constentacao.shared.view.CoreActivity;
 
 /**
@@ -38,8 +39,11 @@ public class HomeActivity extends CoreActivity {
         setContentView(R.layout.main);
         View view = findViewById(R.id.include);
 
+        ConstentacaoRouter.getInstance().goHome(this.getApplicationContext());
 
-        getSupportActionBar().setTitle(" Detalhes da compra");
+
+
+   /**     getSupportActionBar().setTitle(" Detalhes da compra");
 
         fm = getSupportFragmentManager();
         // Abre uma transação e adiciona
@@ -64,7 +68,7 @@ public class HomeActivity extends CoreActivity {
             }
         });
 
-
+    **/
 
     }
 

@@ -7,23 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import java.util.List;
-
 import santander.com.br.constentacao.R;
 import santander.com.br.constentacao.shared.ConstentacaoRouter;
+import santander.com.br.constentacao.shared.model.Respostas;
+import santander.com.br.constentacao.shared.utils.Utils;
 
 /**
  * Created by cledson.alves on 22/12/2017.
  */
 
 public class QuizMotivoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private List<String> listaMotivos;
+    private List<Respostas> listaRespostas;
     private Context context;
 
 
-    public QuizMotivoAdapter(Context context, List<String> lista) {
-        this.listaMotivos = lista;
+    public QuizMotivoAdapter(Context context, List<Respostas> lista) {
+        this.listaRespostas = lista;
         this.context = context;
 
     }
@@ -33,10 +33,14 @@ public class QuizMotivoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         TextView descricaoMotivo;
         RelativeLayout layout;
 
+
         public ViewHolder(View itemView) {
             super(itemView);
             descricaoMotivo = itemView.findViewById(R.id.descricao_motivo);
             layout = itemView.findViewById(R.id.layout);
+
+
+
         }
     }
 
@@ -47,12 +51,14 @@ public class QuizMotivoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-         ((ViewHolder) holder).descricaoMotivo.setText(listaMotivos.get(position).toString());
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
+        ((ViewHolder) holder).descricaoMotivo.setText(listaRespostas.get(position).getDescricao());
         ((ViewHolder) holder).layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // ConstentacaoRouter.getInstance().goHome(context);
+                ConstentacaoRouter.getInstance().goResumoContestacao(context,listaRespostas.get(position).getDescricao());
+
+
             }
         });
 
@@ -60,6 +66,6 @@ public class QuizMotivoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public int getItemCount() {
-        return listaMotivos.size();
+        return listaRespostas.size();
     }
 }

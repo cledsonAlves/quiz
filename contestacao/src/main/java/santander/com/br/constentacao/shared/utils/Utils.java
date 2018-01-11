@@ -2,6 +2,7 @@ package santander.com.br.constentacao.shared.utils;
 
 import android.os.Handler;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
@@ -19,6 +20,16 @@ public class Utils {
             public void run() {
                 layout.setVisibility(View.GONE);
                 r2.setVisibility(View.VISIBLE);
+            }
+        }, timer);
+    }
+
+    public static void mock(final View view, int timer){
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                view.setVisibility(View.GONE);
             }
         }, timer);
     }

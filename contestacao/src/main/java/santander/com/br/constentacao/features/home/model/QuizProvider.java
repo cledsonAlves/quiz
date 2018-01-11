@@ -11,9 +11,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 
 import santander.com.br.constentacao.R;
+import santander.com.br.constentacao.shared.model.Questoes;
+import santander.com.br.constentacao.shared.model.Quiz;
 import santander.com.br.constentacao.shared.model.QuizEntity;
 
 /**
@@ -31,23 +34,35 @@ public class QuizProvider {
     /**
      * TODO Mock JSON pasta Asset
      */
-    public QuizEntity getMockJson() throws IOException {
-        InputStream is = context.getResources().openRawResource(R.raw.quiz);
+    public Quiz getMockJson()  {
+        InputStream is = context.getResources().openRawResource(R.raw.resp);
         Writer writer = new StringWriter();
         char[] buffer = new char[1024];
         try {
-            Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            Reader reader = null;
+            try {
+                reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
             int n;
-            while ((n = reader.read(buffer)) != -1) {
-                writer.write(buffer, 0, n);
+            try {
+                while ((n = reader.read(buffer)) != -1) {
+                    writer.write(buffer, 0, n);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } finally {
-            is.close();
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         Gson gson = new Gson();
         String jsonString = writer.toString();
-
-        return new GsonBuilder().create().fromJson(jsonString, QuizEntity.class);
+        return new GsonBuilder().create().fromJson(jsonString, Quiz.class);
 
 
     }

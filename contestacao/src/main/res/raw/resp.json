@@ -1,0 +1,48 @@
+
+  {
+        "codigo": 1,
+        "descricao": "Inicial",
+        "questoes": [
+            {
+                "descricao": "O que aconteceu com a(s) compra(s)?",
+                "dica": null,
+                "respostas": [
+                    {
+                        "descricao": "Não reconhece a compra?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Perda, furto, roubo?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Nunca Recebeu o cartão?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Cliente arrependido?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Compra Duplicada?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Saque retido no caixa?",
+                        "dica": null,
+                        "proxima_questao": null
+                    },
+                    {
+                        "descricao": "Participou da compra e houve algum problema?",
+                        "dica": null,
+                        "proxima_questao": null
+                    }
+                ]
+            }
+        ]
+    }
